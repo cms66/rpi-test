@@ -1,2 +1,2 @@
 # rpi-test
-test repo
+test new repo
