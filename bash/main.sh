@@ -2,7 +2,7 @@
 
 show_vars()
 {
-	printf "test of source\n"
+	printf "test of sourcing var\n"
 	printf "var = $datadir"
 }
 
