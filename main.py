@@ -2,6 +2,7 @@
 
 def get_selection(prompt):
 	usropt = input(prompt)
+	return usropt
 	
 def main():
 	input("Python main start")
