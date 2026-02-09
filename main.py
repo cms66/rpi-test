@@ -2,9 +2,7 @@
 import os
 
 def run_bash(file, func):
-	bashfile = os.path.dirname(__file__) + "/bash/" + file + ".sh"
-	cmd = "source " + bashfile + "; " + func
-	os.system(cmd)
+	os.system("source /data/current/src/git/rpi-home-pycluster/main.sh; show_vars")
 	input("Command done, press enter to continue")
 
 def get_selection(prompt):
@@ -13,7 +11,7 @@ def get_selection(prompt):
 	
 def main():
 	input("Python main start")
-	usrsel = get_selection("Test prompt: ")
+	usrsel = get_selection("Selection from same module: ")
 	print("Selection = " + usrsel)
 	run_bash(main, show_vars)
 	input("Python main end")
