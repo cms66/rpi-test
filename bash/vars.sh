@@ -1,2 +1,3 @@
-# Variables for all bash scripts
-datadir="test_dir"
+# Variables for bash scripts
+datadir="datadir in vars.sh"
+
