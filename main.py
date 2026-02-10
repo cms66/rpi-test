@@ -1,15 +1,15 @@
 # Python entry point for main
 import os
+bashfile = "/home/multipi/rpi-test/bash/main.sh"
 
-def run_bash(file, func):
-	os.system("source /data/current/src/git/rpi-home-pycluster/main.sh; show_vars")
+def run_bash(func):
+	strcmd = "source " + bashfile + "; source_bash; " + func
+	os.system(strcmd)
 	input("Command done, press enter to continue")
 	
 def main():
 	input("Python main start")
-	usrsel = get_selection("Selection from same module: ")
-	print("Selection = " + usrsel)
-	run_bash(main, show_vars)
+	run_bash('show_vars; test_func')
 	input("Python main end")
 
 if __name__ == "__main__":
