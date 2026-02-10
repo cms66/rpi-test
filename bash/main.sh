@@ -1,8 +1,10 @@
-# Generic bash functions
+# Entry point for python call
 
-show_vars()
+source_bash()
 {
-	printf "test of sourcing var\n"
-	printf "var = $datadir"
+	# Source setup shell scripts in same directory
+	for file in $(find $(dirname -- "$0") -type f -name "*.sh" ! -name $(basename "$0"));
+	do
+  		source $file;
+	done
 }
-
