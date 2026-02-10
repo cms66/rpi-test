@@ -2,5 +2,10 @@
 
 test_func()
 {
-	read -p "Test function in func.sh"
+	read -p "test_func in func.sh"
+}
+
+show_vars()
+{
+	printf "var from vars.sh called from func.sh = $datadir\n"
 }
