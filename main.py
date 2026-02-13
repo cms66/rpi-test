@@ -1,7 +1,7 @@
 # Python entry point for main
 import os
-from python import functions as pf
-from python import vars as pv
+import python.functions as pf
+import python.vars as pv
 
 #bashfile = "/home/multipi/rpi-test/bash/main.sh"
 
