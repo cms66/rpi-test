@@ -1,6 +1,9 @@
 # Python entry point for main
 import os
-bashfile = "/home/multipi/rpi-test/bash/main.sh"
+from python import functions as pf
+from python import vars as pv
+
+#bashfile = "/home/multipi/rpi-test/bash/main.sh"
 
 def run_bash(func):
 	strcmd = "source " + bashfile + "; source_bash; " + func
