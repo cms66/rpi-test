@@ -1,5 +1,5 @@
 # Python functions
-
+import os
 import python.vars as pv
 
 def run_bash(func):
